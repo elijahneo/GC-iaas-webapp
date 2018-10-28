@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "AzureCloud" 
+    },
+    "omsWorkspaceRegion": {
+      "value": "Southeast Asia"
+    },
+    "keyVaultName": {
+      "value": "GCKeystoreUserxyz"
+    },
+    "keyVaultResourceGroupName": {
+      "value": "GCbluePrintUserxyz"
+    },
+    "domainName": {
+      "value": "GCblueprint.local"
+    },
+    "configureSQLAO": {
+      "value": "yes"
+    },
+    "environmentPrefix": {
+      "value": "prod"
+    },
+    "numberOfWebInstances": {
+      "value": 2
+    },
+    "useExistingKek": {
+      "value": "kek"
+    },
+    "encryptionEnabled": {
+      "value": true
+    },
+    "adVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "sqlVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "webVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "mgtVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "witnessVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "sqlStorageAccountType": {
+      "value": "Standard_GRS"
+    },
+    "dcStorageAccountType": {
+      "value": "Standard_GRS"
+    },
+    "webStorageAccountType": {
+      "value": "Standard_GRS"
+    },
+    "mgtStorageAccountType": {
+      "value": "Standard_GRS"
+    },
+    "templatesBaseUrl": {
+      "value": "https://raw.githubusercontent.com/elijahneo/GC-iaas-webapp/master/nestedtemplates"
+    },
+    "dscBaseUrl": {
+      "value": "https://raw.githubusercontent.com/elijahneo/GC-iaas-webapp/master/DSC"
+    },
+    "scriptsBaseUrl": {
+      "value": "https://raw.githubusercontent.com/elijahneo/GC-iaas-webapp/master/custom-scripts"
+    },
+    "sqlServerVersion": {
+      "value": "SQL2016-WS2012R2"
+    },
+    "gatewaySkuName": {
+      "value": "WAF_Medium"
+    }
+  }
+}
